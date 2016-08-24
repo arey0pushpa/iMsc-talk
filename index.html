@@ -81,21 +81,21 @@
 <section>
      
 									
-							<h2><font color="sky-blue">Presentation :</font></h2>
+							<h2><a href="">Presentation :</a></h2>
 							
 							
 							<ol>
 							<br />
-							<li>&nbsp Model checking</li> <br />
-            <li> &nbsp; Biological Setup of the Problem</li>
+							<li>&nbsp  <font color="#cc6699">Model checking</font></li> <br />
+            <li> &nbsp; <font color="#006699">Biological Setup</font> of the Problem</li>
             							<br />
 
        
 
-            <li> &nbsp; Ecoding it as a <a href="">Model Checking problem</a></li>
+            <li> &nbsp; <font color="#FF7F50">Ecoding</font> it as a Model Checking problem</li>
             							<br />
 
-                <li><font color="green">&nbsp; Results ... </font>Future work</font> </li>
+                <li><font color="#2E8B57">&nbsp; Results ... </font>Future work</font> </li>
             							<br />
        
 </ol>
@@ -232,38 +232,68 @@ formula of temporal logic (i.e., the specification)."
 					</p>
 				</section>
 
-
+<!--
 <section>
 <h3>Current Project  & future work</h3>
 
 <img src="333333.jpg" alt="" height = "560" width="780">
 
 </section>   
+-->
 
 <section>
-	<h2><a href="">HelpFul Picture...</a></h2>
+<h2>Current Project :</h2>
+<img src="e.jpg" height = "460" width="680">
+<p>ROTHMAN SCHOEMAN SUDOF</p></section>
+<section>
+	<h2>HelpFul Picture...</h2>
 <img src="h.jpeg" height = "450" width="720">
+</section>
+
+<section>
+	<h2><a href= "">Abstract RSS model:</a> </h2>
+	<ol> <li>A cell is a <font color="#bf4040">set of compartments</font> exchanging vesicles.</li>
+<li>Compartments are neither created nor destroyed.</li>
+<li>Each compartment is in <font color="#bf4040">steady state</font>, gain and loss
+balance.</li>
+<li>Molecules are neither created nor destroyed.</li>
+<li>Molecules move via vesicles of uniform size.</li>
+<li><font color="#bf4040">Identical vesicles</font> must have <font color="#bf4040">identical target</font></li>
+compartments</li></ol>
+
+</section>
+
+<section>
+<h2>Extended e-RRS Model </h2>
+
+<ul>
+				<li>An active SNARE pair is <a href="http://www.oreillynet.com/pub/a/javascript/2001/04/06/js_history.html">  necessary / sufficient forfusion</a></li>				
+  <br />
+					  ♥ &nbsp; System contains only<font color="brown">  SNARE activators </font> (eRSS-a).<br />
+					<br />
+				   ♥ &nbsp;	System contains only <font color="red">SNARE inhibitors </font> (eRSS-i).<br/>
+	<br />			   ♥ &nbsp SNARE activity is regulated <font color="green"> combinatorially (eRSS-c)</font> Model.
+
 </section>
 
 				<section>
 					<h2>Vesicular traffic Model</font></h2>
 					<ul>
-						<li><q cite="">Nodes are compartment that contains <font color="#bf4040">molecules</font><font color="#ff0080"> M</font>
-						and total <font color="#bf4040">N </font> <font color="#ff0080">nodes.</font> 0/1 means whether molecule is presnt or not.
+						<li><q cite="">Nodes (N) represent compartments exchanging <font color="#bf4040">molecules</font><font color="#ff0080"> M</font>
+						 <font color="#bf4040"></font> Represnt a node as a<font color="green"> bitvector </font><font color="#ff008">0b1101</font> 
 
 </q></li>
 
-						<li>Edges represent vesicles that are going out to  <a href="https://npmjs.org/">fuse to another compartment.</a></li>
-						<li>Edge should respect fusion rules.<sup>*</sup></li>
+						<li>Directed Edge represent vesicles that are going out to  <a href="https://npmjs.org/">fuse to another compartment.</a></li>
+						<li>Two Required Condition:<sup>*</sup></li>
 
 
 					</ul>
 					<pre><code data-trim contenteditable>
-              Two Required Condition: 
+						
+				  1. Cell has to be in steady State
                   
-                  1. Cell has to be in steady State
-                   
-                  2. Two edge with same edge tag should go to same target.
+                  2. Edges should respect fusion rules.
 					
 					</code></pre>
 					<small style="margin-top:50px;"><sup>*</sup> :Not always  <a href="http://lodash.com/">the case</a> but interesting enough.</small>
@@ -290,18 +320,34 @@ formula of temporal logic (i.e., the specification)."
 
 <section>
 <ul>
- <li>        <font color="grey"> At least one vsnare should pass all constraints</font> and allow fusion to occur. Multiple can.</li>
+ <li>        <font color="#bf4040"> At least one vsnare should pass all constraints</font> and allow fusion to occur. Multiple can.</li>
 <br /><li>
             <code>Other constraine is that the tsnares that are required for fusion have not to be present at edge.</code>
                 Else that vsnare will not be considered for a candidate for the fusion. 
           </li>      
-    <br />        <li>   For source compartment also, <a href="">those t snares have to be absent</a> or present but are surely off (a 0 Onoff matrix).</li>
-</ul>
+    <br />       <li><font color="green">Self edges / loops </font>not allowed.</li></ul>
 </section>
+	
+	<section>
+		<h2><a href="">Examples :</a></h2>
+		<ul>
+		<li></font><font color="#ff008">N - Color</font> Problem</li>
+		<br />
+		<li></font><font color="green">Steady state </font>Condition</li>
+		</ul>
+	
+	</section>
 				
 <section>
+	
+	
 <h2>Results ...</h2>
-<img src="2.png">
+<br />
+<ul>
+<li>RSS Model : <font color="green">3 Connectedness</font> is Sufficient Condition</li> <br />
+<li>RSS with constraints <font color="#006699">each vesicle is different :</font> 3 connectedness is neccesary and sufficient Condition</li><br/>
+<li><font color="#DC143C">eRSS Model :</font> 4 Connetedness is a Neccesary and sufficient condition</li>
+</ul>
 </section>
 				
 
